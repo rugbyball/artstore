@@ -1,0 +1,14 @@
+    <div class="col-md-3">
+      <p class="lead">關於 ToolStore</p>
+      <div class="list-group">
+        <!--
+        <a href="#" class="list-group-item">產品介紹</a>
+        <a href="#" class="list-group-item">哪裡買</a>
+        <a href="#" class="list-group-item">聯絡我們</a>
+        -->
+        <% @infos.each do |info| %>
+          <!--<a href="#" class="list-group-item"><%= info.title %></a>-->
+          <%= link_to(info.title, info_path(info), class: "list-group-item") %>
+        <% end %>
+      </div>
+    </div>

@@ -1,0 +1,7 @@
+<li>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fec2-54-64-151-0.ap-northeast-1.compute.amazonaws.com%3A3000%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="images/social_flat_rounded_rects_svg/Facebook.svg"></a>
+</li>
+<li>
+  <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fec2-54-64-151-0.ap-northeast-1.compute.amazonaws.com%3A3000%2F&text=:%20http%3A%2F%2Fec2-54-64-151-0.ap-northeast-1.compute.amazonaws.com%3A3000%2F" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="images/social_flat_rounded_rects_svg/Twitter.svg"></a>
+</li>
+

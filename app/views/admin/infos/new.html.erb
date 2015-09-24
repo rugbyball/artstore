@@ -1,0 +1,14 @@
+<h2> 新增資訊 </h2>
+<%= simple_form_for [:admin, @info] do |f| %>
+  <div class="form-group">
+    <%= f.input :title, label: "標題"  %>
+
+    <%= f.input :description, label: "敘述"  %>
+
+    <%= f.input :ordinal, label: "排序"  %>
+
+  </div>
+
+  <%= f.submit "Submit", data: { disable_width: "Submitting..." } %>
+
+<% end %>

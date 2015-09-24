@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+  <%= render "common/site_item", infos: @infos %>    
+
+  <div class="col-md-7">
+    <h2> <%= @info.title %> </h2>
+    <div style="height:100px;">
+      <p>
+        <%= raw @info.description %>
+      </p>
+    </div>
+
+  </div>
+</div>
+</div>
