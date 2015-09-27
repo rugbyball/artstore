@@ -15272,3 +15272,153 @@ Processing by ProductsController#index as HTML
   Rendered common/_navbar.html.erb (12.8ms)
   Rendered common/_footer.html.erb (0.1ms)
 Completed 200 OK in 212ms (Views: 208.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 1.169.54.69 at 2015-09-27 12:58:33 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mInfo Load (0.3ms)[0m  SELECT "infos".* FROM "infos"
+  Rendered common/_site_item.html.erb (10.5ms)
+  Rendered products/_slide_item.html.erb (0.5ms)
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"  ORDER BY id DESC[0m
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1  [["product_id", 6]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1[0m  [["product_id", 5]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1  [["product_id", 4]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1[0m  [["product_id", 3]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1  [["product_id", 2]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1[0m  [["product_id", 1]]
+  Rendered products/_product_item.html.erb (73.1ms)
+  Rendered products/index.html.erb within layouts/application (94.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cart_items" WHERE "cart_items"."cart_id" = ?  [["cart_id", 3]]
+  Rendered common/_share.html.erb (13.6ms)
+  Rendered common/_navbar.html.erb (79.8ms)
+  Rendered common/_footer.html.erb (1.1ms)
+Completed 200 OK in 623ms (Views: 597.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/account/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/infos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cart_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/infos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/shop-homepage.self-3f580c271f6c10164af4c93760ce890038faf946d39e141cab6aa7e1df39dc02.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-2070bffc976a59b41836e878de90bb2e8e6e016a5bfd02905bfcceed1fd4fce8.css?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-43417c04bc95be22d6f4b32df72555496a96815c4362c3c5cf922c2d67b57894.js?body=1" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/Facebook-fadd0e82b4162d374ae3a21ea4d60ac35328835f16667377036e57d8d5e9f321.svg" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/Twitter-3470bf4b2062803a4162e2eed64b9cf6351f0a9952639c31d2d2d402902fce16.svg" for 1.169.54.69 at 2015-09-27 12:58:34 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for 1.169.54.69 at 2015-09-27 12:58:38 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 1.169.54.69 at 2015-09-27 12:58:38 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 1.169.54.69 at 2015-09-27 12:58:48 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[36mInfo Load (0.2ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  Rendered common/_site_item.html.erb (1.7ms)
+  Rendered products/_slide_item.html.erb (0.1ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"  ORDER BY id DESC
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1[0m  [["product_id", 6]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1  [["product_id", 5]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1[0m  [["product_id", 4]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1  [["product_id", 3]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1[0m  [["product_id", 2]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."product_id" = ?  ORDER BY "photos"."id" DESC LIMIT 1  [["product_id", 1]]
+  Rendered products/_product_item.html.erb (12.8ms)
+  Rendered products/index.html.erb within layouts/application (17.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCart Load (0.1ms)[0m  SELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cart_items" WHERE "cart_items"."cart_id" = ?[0m  [["cart_id", 3]]
+  Rendered common/_share.html.erb (4.5ms)
+  Rendered common/_navbar.html.erb (10.0ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 243ms (Views: 239.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/infos/1" for 1.169.54.69 at 2015-09-27 12:58:51 +0000
+Cannot render console from 1.169.54.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InfosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInfo Load (0.3ms)[0m  SELECT  "infos".* FROM "infos" WHERE "infos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInfo Load (0.2ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  Rendered common/_site_item.html.erb (1.9ms)
+  Rendered infos/show.html.erb within layouts/application (3.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cart_items" WHERE "cart_items"."cart_id" = ?  [["cart_id", 3]]
+  Rendered common/_share.html.erb (3.7ms)
+  Rendered common/_navbar.html.erb (10.1ms)
+  Rendered common/_footer.html.erb (0.3ms)
+Completed 200 OK in 158ms (Views: 154.5ms | ActiveRecord: 0.8ms)
