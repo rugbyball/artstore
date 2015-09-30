@@ -26,12 +26,12 @@ class Order < ActiveRecord::Base
     self.save
   end
 
-  before_create :generate_token
+#  before_create :generate_token
 
-  def generate_token
-    self.token = SecureRandom.uuid
-  end
-
+#  def generate_token
+#    self.token = SecureRandom.uuid
+#  end
+include Tokenable
 
   def paid?
     is_paid
