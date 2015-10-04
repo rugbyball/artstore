@@ -80,4 +80,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+ 
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    port:           587,
+    address:        "smtp.mailgun.org",
+    user_name:      "postmaster@sandbox一堆亂碼.mailgun.org", # 你的 mailgun 的 user_name ( 見作業 1 解答 )
+    password:       "xxxx", # 你的 mailgun 的 password ( 見作業 1 解答 )
+    domain:         "sandbox一堆亂碼.mailgun.org",
+    authentication: :plain,
+  }
+
 end

@@ -9,6 +9,8 @@ gem 'font-awesome-rails'
 gem 'aasm'
 gem 'activemerchant', "~> 1.43.1"
 gem 'active_merchant_allpay', "0.1.2"
+gem 'fog'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
